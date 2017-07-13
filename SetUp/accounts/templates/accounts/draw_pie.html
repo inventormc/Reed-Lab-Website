@@ -1,0 +1,17 @@
+<form method="GET" action="/draw_pie/">
+            <h1>Pie Size</h1>
+
+            <label>
+                <span>Size: </span>
+                <input type="number" step = "any" id="searchBox" class="input-medium search-query"
+                name="size" placeholder="size"><br>
+            </label>
+
+
+            <!--<input type="submit" class="button" value="Draw Pie" >-->
+
+            <input type="submit" value="Graphing" name="graphing"/>
+
+        </form>
+
+        <img src="http://yourwebsite.com/pies/{{ size }}"><br>
