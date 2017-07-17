@@ -10,10 +10,6 @@ from django.contrib.auth.decorators import login_required
 
 
 
-
-
-
-
 def home(request):
     numbers = [1, 2, 3, 4, 5]
     name = 'Manuel'
@@ -38,10 +34,8 @@ def register(request):
 
 @login_required
 def view_profile(request):
-    print('this is the profile profile page')
     args = {'user': request.user}
     return render(request, 'accounts/profile.html', args)
-
 
 @login_required
 def edit_profile(request):
@@ -74,9 +68,3 @@ def change_password(request):
             form = PasswordChangeForm(user=request.user)
             args = {'form': form}
             return render(request, 'accounts/change_password.html', args)
-
-
-#This is the graphing stuff, its not complete
-#def graph(request):
-#canvas=FigureCanvas(fig)
-#return response

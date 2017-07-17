@@ -14,14 +14,6 @@
   </p>
 </div>
 
-<script src="https://www.desmos.com/api/v0.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-<div id="calculator" style="width: 600px; height: 400px;"></div>
-<script>
-  var elt = document.getElementById('calculator');
-  var calculator = Desmos.GraphingCalculator(elt);
-  calculator.setExpression({id:'graph1', latex:'y=x^2'});
-</script>
-
 <form action="/graph_code.html">
 Equation: <input type="text" name="FirstName" ><br>
 <input type="submit" value="Submit">
