@@ -25,5 +25,6 @@ urlpatterns = [
     password_reset_confirm, name='password_reset_confirm'),
     url(r'^reset-password/complete/$', password_reset_complete,
     name='password_reset_complete'),
-
+    url(r'^index', views.index, name='index'),
+    url(r'^graph.png$', views.graph, name='graph'),
 ]
