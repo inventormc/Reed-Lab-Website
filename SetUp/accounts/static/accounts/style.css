@@ -1,3 +1,144 @@
-body {
-  background-color: blue;
+.navbar-default {
+  background-color: #0f1525;
+  border-color: #363038;
 }
+.navbar-default .navbar-brand {
+  color: #d63434;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-text {
+  color: #d63434;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #d63434;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #0f1525;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #d63434;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ecdbff;
+  background-color: #363038;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #363038;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ecdbff;
+  background-color: #363038;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #363038;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecdbff;
+  background-color: #363038;
+}
+.navbar-default .navbar-toggle {
+  border-color: #363038;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #363038;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #d63434;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #d63434;
+}
+.navbar-default .navbar-link {
+  color: #d63434;
+}
+.navbar-default .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #d63434;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #363038;
+  }
+}
+
+
+/* Footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  padding-top: 1000px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-bottom: 0;
+
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100%;
+  background:
+  /* color overlay */
+    linear-gradient(
+      rgba(15, 21, 37, 0.95),
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* image to overlay */
+    url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+}
+
+
+/* Custom footer CSS
+-------------------------------------------------- */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footertext {
+  color: #ffffff;
+}
+
+
+.container {
+  border-style: solid;
+  height: 500px;
+}
+
