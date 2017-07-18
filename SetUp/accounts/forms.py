@@ -37,3 +37,7 @@ class EditProfileForm(UserChangeForm):
             'last_name',
             'password'
         )
+
+class GraphForm(forms.Form):
+    number = forms.CharField(label='Enter Number')
+
