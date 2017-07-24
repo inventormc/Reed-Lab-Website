@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+<html>
+
+{% block head %}
+  <head>
+    <meta charset="utf-8">
+    <title>Look Up</title>
+  </head>
+{% endblock %}
+
+
+{% block body %}
+
+<img src="/wp-content/Do/Molecules.PNG">
+
+  <body background="ions.PNG">
+
+    <h1>It worked!</h1>
+
+        <form method="post">
+          {% csrf_token %}
+
+
+
+
+          Superionic likelihood: <input type="text" name="FirstName" ><br>
+          Band Gap: <input type="text" name="FirstName" ><br>
+          Upper bound oxidation potential: <input type="text" name="FirstName" ><br>
+          Transition metal present?: <input type="text" name="FirstName" ><br>
+          <input type="submit" value="Submit">
+          </form>
+
+
+
+
+  </body>
+</html>
+
+
+{% endblock %}

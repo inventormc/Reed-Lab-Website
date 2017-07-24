@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
+
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField(required=True)
 
@@ -15,6 +16,15 @@ class RegistrationForm(UserCreationForm):
             'password1',
             'password2'
         )
+
+class FilterMaterials(forms.Form):
+    subject = forms.CharField(max_length=100)
+    message = forms.CharField()
+    sender = forms.EmailField()
+    cc_myself = forms.BooleanField(required=False)
+
+
+
 
     def save(self, commit=True):
         user = super(RegistrationForm, self).save(commit=False)
@@ -40,4 +50,3 @@ class EditProfileForm(UserChangeForm):
 
 class GraphForm(forms.Form):
     number = forms.CharField(label='Enter Number')
-

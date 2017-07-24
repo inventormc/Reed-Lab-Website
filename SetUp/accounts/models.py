@@ -15,3 +15,10 @@ def create_profile(sender, **kwargs):
     if kwargs['created']:
         user_profile = UserProfile.objects.create(user=kwargs['instance'])
 post_save.connect(create_profile, sender=User)
+
+
+# class material_search(models.Model):
+#    Superionic likelihood = models.float(max_length=250)
+#    Band Gap = models.float(max_length=250)
+#    Upper bound oxidation potential = models.float(max_length=250)
+#    Transition metal present = models.BooleanField()

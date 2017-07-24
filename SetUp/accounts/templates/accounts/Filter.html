@@ -1,0 +1,17 @@
+  {% extends 'base.html' %}
+
+  {% block body %}
+  <div class="container">
+    <h1>Welcome</h1>
+    <p>
+      You can Filter here
+    </p>
+
+
+    <form action="/AustinPhD/" method="post">{% csrf_token %}
+      {{ form.as_p }}
+      <imput type="submit" value="Submit">
+    </form>
+
+  </div>
+  {% endblock %}

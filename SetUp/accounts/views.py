@@ -26,7 +26,11 @@ import PIL
 import math
 import six
 
+
 from .forms import GraphForm
+
+
+
 
 def home(request):
     numbers = [1, 2, 3, 4, 5]
@@ -54,6 +58,28 @@ def register(request):
 def view_profile(request):
     args = {'user': request.user}
     return render(request, 'accounts/profile.html', args)
+
+
+@login_required
+def material_search(request):
+    return render(request, 'accounts/material_search.html')
+#    if request.method == 'POST':
+    #    form = FilterMaterials(request.POST)
+#    if form.is_valid():
+
+#        return HttpResponseRedirect('/AustinPhD/')
+#    else:
+        #form = FilterMaterials()
+
+    #return render_to_response('Filter.html', {
+    #    'form': form,
+    #})
+
+
+
+
+
+
 
 @login_required
 def edit_profile(request):

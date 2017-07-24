@@ -79,10 +79,19 @@ WSGI_APPLICATION = 'SetUp.wsgi.application'
 
 DATABASES = {
     'default': {
+    #I changed the sqlite3 to mysql
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
+
+
+
+
+
+
+
 
 
 # Password validation
@@ -129,3 +138,7 @@ LOGIN_REDIRECT_URL = '/account/'
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
+
+
+FILE_UPLOAD_HANDLERS = ("django_excel.ExcelMemoryFileUploadHandler",
+                        "django_excel.TemporaryExcelFileUploadHandler")

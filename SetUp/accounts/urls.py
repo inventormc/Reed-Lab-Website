@@ -27,4 +27,5 @@ urlpatterns = [
     name='password_reset_complete'),
     url(r'^index', views.index, name='index'),
     url(r'^graph.png$', views.graph, name='graph'),
+    url(r'^AustinPhD/$', views.material_search, name="material_search"),
 ]

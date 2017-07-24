@@ -2,7 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}" type="text/css">
 
     {% block head %}
 
@@ -36,8 +37,8 @@
               <li><a href="/account/profile/edit">Edit profile</a></li>
               <li><a href="/account/change-password">Change Password</a></li>
               <li><a href="/account/reset-password">Reset Password</a></li>
-              <li><a href="/account/index">Graph Stuff</a></li>
-              <li><a href="/account/.....">Input Changer</a></li>
+              <li><a href="/account/index">Mike's Grapher</a></li>
+              <li><a href="/account/AustinPhD">Materials Search</a></li>
             </ul>
             {% else %}
             <ul class="nav navbar-nav navbar-right">
